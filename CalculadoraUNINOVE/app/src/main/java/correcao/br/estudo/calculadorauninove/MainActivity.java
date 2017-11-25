@@ -23,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
         btnSimples.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivities(new Intent(MainActivity.this, CalculadoraSimples.class));
+                startActivity(new Intent(MainActivity.this, CalculadoraSimples.class));
             }
         });
+        btn2grau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SegundoGrau.class));
+            }
+        });
+
     }
-
-
-
 }
